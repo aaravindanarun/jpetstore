@@ -1,5 +1,11 @@
 ---
+path: .
+memory: 512M
+instance: 1
+services:
+ - singular-backend
 applications: 
-- name: jpetstore
-  mem: 512M
-  path: target/jpetstore.war
+ - name: jpetstoreapp
+   host: jpetstoreapp  
+   path: target/hello-java-1.0.war
+   timeout: 80
