@@ -7,3 +7,4 @@ applications:
   domain: mybluemix.net	                       # api..xip.io accordingly to cf_nise_installer installation steps
   command:
   path: ${JENKINS_HOME}/workspace/${JOB_NAME}/target/jpetstore.war
+  timeout: 1200
