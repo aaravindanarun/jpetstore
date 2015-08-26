@@ -6,4 +6,4 @@ applications:
   host: jpetstoreapp				                                                          # use your own value here
   domain: mybluemix.net	                       # api..xip.io accordingly to cf_nise_installer installation steps
   command:
-  path: ${JENKINS_HOME}/workspace/${ITEM_FULLNAME}/target/jpetstore.war
+  path: ${JENKINS_HOME}/workspace/${BUILD_NAME}/target/jpetstore.war
