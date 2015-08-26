@@ -1,11 +1,9 @@
 ---
-path: .
-memory: 512M
-instance: 1
-services:
- - singular-backend
-applications: 
- - name: jpetstoreapp
-   host: jpetstoreapp  
-   path: target/hello-java-1.0.war
-   timeout: 80
+applications:
+- name: jpetstoreapp                                                       # you can use any name you like
+  memory: 512M
+  instances: 1
+  host: jpetstoreapp				                                                          # use your own value here
+  domain: mybluemix.net	                       # api..xip.io accordingly to cf_nise_installer installation steps
+  command:
+  path: /target/jpetstore.war
