@@ -1,9 +1,4 @@
 ---
-declared-services:
-  mysql-database:
-    label: mysql
-    plan: '100'
-
 applications:
 - name: jpetstoreapp                                                       # you can use any name you like
   memory: 512M
@@ -13,5 +8,3 @@ applications:
   command:
   path: ${JENKINS_HOME}/workspace/${JOB_NAME}/target/jpetstore.war
   timeout: 180
-  services:
-  - mysql-database #Identifier for MySQL Bound Service instance
