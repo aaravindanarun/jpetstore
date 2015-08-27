@@ -8,3 +8,5 @@ applications:
   command:
   path: ${JENKINS_HOME}/workspace/${JOB_NAME}/target/jpetstore.war
   timeout: 180
+  services:
+  - mysql-database #Identifier for MySQL Bound Service instance
