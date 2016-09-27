@@ -14,6 +14,10 @@
 --    limitations under the License.
 --
 
+DROP DATABASE IF EXISTS `jpetstore`;
+CREATE DATABASE jpetstore;
+USE jpetstore;
+
 create table supplier (
     suppid int not null,
     name varchar(80) null,
